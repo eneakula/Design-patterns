@@ -1,0 +1,14 @@
+package com.sda.creational.singleton;
+
+public class SingletonLazyExample {
+    private static SingletonLazyExample instance;
+
+    public static SingletonLazyExample getInstance() {
+        if (instance == null) {
+            System.out.println("Creating new instance");
+            instance = new SingletonLazyExample();
+        }
+        return instance;
+    }
+
+}
